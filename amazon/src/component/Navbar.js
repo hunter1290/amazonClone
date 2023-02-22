@@ -40,7 +40,8 @@ const Navbar = ()=>{
                      <SearchIcon onClick={()=>navigate('/addproduct')}> <img src="./searchIcon.png" alt="" /> </SearchIcon>
                 </SearchBar>
                  {
-                    guest.length==0? <MainButton onClick={e=>navigate('/login')}>Login</MainButton>:  <RightContainer>
+                                       !guest? <MainButton onClick={e=>navigate('/login')}>Login</MainButton>:  <RightContainer>
+
 
 <NavButtons>
  <p style={{margin:"0px"}}>hello</p>
